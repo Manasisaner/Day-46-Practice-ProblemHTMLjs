@@ -1,35 +1,50 @@
 <!DOCTYPE html>>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/EmpPayroll.css">
-        <title>Employee Payroll Form</title>
-    </head>
-    <body>
-        <div class="form-content">
-            <form class="form" action="#" onsubmit="save();">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/EmpPayroll.css">
+    <title>Employee Payroll Form</title>
+</head>
+
+<body>
+    <div class="form-content">
+        <form class="form" action="#" onsubmit="save();">
             <!-- UC1  create an Employee Payroll System UI -->
-    <header class="header-content header">
-        <div class="logo-content">
-            <img src="../assets/logo.png" alt="logo">
-            <div>
-                <span class="emp-text">EMPLOYEE</span></br>
-                <span class="emp-text emp-payroll">PAYROLL</span>
+            <header class="header-content header">
+                <div class="logo-content">
+                    <img src="../assets/logo.png" alt="logo">
+                    <div>
+                        <span class="emp-text">EMPLOYEE</span></br>
+                        <span class="emp-text emp-payroll">PAYROLL</span>
+                    </div>
+                </div>
+            </header>
+            <!-- UC2 Create a Form Header and the Input Text Element for Name-->
+            <div class="form-head">Employee Payroll form</div>
+            <div class="row-content">
+                <label class="label text" for="name">Name</label>
+                <input class="input" type="text" id="name" name="name" placeholder="Your name.." required>
+                <error-output class="text-error" for="text"></error-output>
             </div>
-        </div>
-    </header>
-     <!-- UC2 Create a Form Header and the Input Text Element for Name-->
-     <div class="form-head">Employee Payroll form</div>
-     <div class="row-content">
-         <label class="label text" for="name">Name</label>
-         <input class="input" type="text" id="name" name="name" placeholder="Your name.." required>
-         <error-output class="text-error" for="text"></error-output>
-     </div>
-    </form>
+            <div class="row-content">
+                <label class="label text" for="profile">Profile image</label>
+                <!-- UC3 Specify the Profile Pic in the Form -->
+                <div class="profile-radio-content">
+                    <label> <input type="radio" id="profilel" name="profile" value="../assets/Ellipse -1.png" required>
+                        <img class="profile" id='imagel' src="../assets/Ellipse -1.png"> </label>
+                    <label> <input type="radio" id="profile2" name="profile" value="../assets/Ellipse -2.png" required>
+                        <img class="profile" id='image2' src="../assets/Ellipse -2.png"> </label>
+                    <label> <input type="radio" id="profile3" name="profile" value="../assets/Ellipse -3.png" required>
+                        <img class="profile" id='image3' src="../assets/Ellipse -3.png"> </label>
+                    <label> <input type="radio" id="profile4" name="profile" value="../assets/Ellipse -4.png" required>
+                        <img class="profile" id='image4' src="../assets/Ellipse -4.png"> </label>
+                </div>
+            </div>
+        </form>
     </div>
-    </body>
-    
+</body>
+
 </html>
