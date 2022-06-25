@@ -8,7 +8,10 @@ class EmployeePayroll {
 
     get name() { return this._name; }
     set name(name) {
+        let nameRegex =RegExp('^[A-Z]{1}[a-zA-Z]$');
+        if (nameRegex.test(name))
         this._name = name;
+        else throw "Name is incorrect";
     }
 
     get profilePic() { return this._profilePic; }
